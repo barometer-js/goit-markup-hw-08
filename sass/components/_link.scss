@@ -1,6 +1,6 @@
 .link {
   &:hover,
   &:focus {
-    color: var(--main-accent-color);
+    color: $main-accent-color;
   }
 }

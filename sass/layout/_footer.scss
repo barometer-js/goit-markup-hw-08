@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--main-bg-color);
+  background-color: $main-bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -11,7 +11,7 @@
 
   &__logo {
     display: inline-block;
-    color: var(--logo-third-color);
+    color: $logo-third-color;
     margin-bottom: 20px;
   }
 
@@ -20,7 +20,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--main-font-color-dark-bg);
+    color: $main-font-color-dark-bg;
 
     &:not(:last-child) {
       margin-bottom: 9px;
@@ -28,10 +28,14 @@
   }
 
   &__link {
-    color: var(--auxiliary-color);
+    color: $auxiliary-color;
     transition-property: color;
-    transition-duration: var(--duration-action);
-    transition-timing-function: var(--timing-function-action);
+    transition-duration: $duration-action;
+    transition-timing-function: $timing-function-action;
+
+    &-map {
+      color: $main-font-color-dark-bg;
+    }
   }
 
   &__title {
@@ -39,7 +43,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-font-color-dark-bg);
+    color: $main-font-color-dark-bg;
     margin-bottom: 20px;
     text-align: start;
   }
@@ -68,29 +72,29 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition-property: background-color;
-    transition-duration: var(--duration-action);
-    transition-timing-function: var(--timing-function-action);
+    transition-duration: $duration-action;
+    transition-timing-function: $timing-function-action;
 
     &:hover,
     &:focus {
-      background-color: var(--main-accent-color);
+      background-color: $main-accent-color;
     }
   }
 
   &__social-icon {
-    fill: var(--main-font-color-dark-bg);
+    fill: $main-font-color-dark-bg;
   }
 
   &__call-to-subscription {
     display: inline-block;
-    font-family: var(--main-font);
+    font-family: $main-font;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-font-color-dark-bg);
+    color: $main-font-color-dark-bg;
     margin-bottom: 20px;
   }
 
@@ -101,7 +105,7 @@
     padding-left: 16px;
     margin-right: 12px;
     background-color: transparent;
-    color: var(--main-font-color-dark-bg);
+    color: $main-font-color-dark-bg;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
@@ -121,7 +125,7 @@
 
     &:hover,
     &:focus {
-      background-color: var(--auxiliary-accent-color);
+      background-color: $auxiliary-accent-color;
     }
   }
 
@@ -130,6 +134,6 @@
     transform: translateY(-50%);
     top: 50%;
     right: 28px;
-    fill: var(--main-font-color-dark-bg);
+    fill: $main-font-color-dark-bg;
   }
 }

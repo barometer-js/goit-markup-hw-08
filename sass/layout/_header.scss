@@ -14,7 +14,7 @@
 
   &__logo {
     margin-right: 93px;
-    color: var(--logo-second-color);
+    color: $logo-second-color;
   }
 
   &__contacts-list {
@@ -24,19 +24,19 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--secondary-color);
+    color: $secondary-color;
   }
 
   &__contacts-icon {
     fill: currentColor;
     margin-right: 10px;
     transition-property: fill;
-    transition-duration: var(--duration-action);
-    transition-timing-function: var(--timing-function-action);
+    transition-duration: $duration-action;
+    transition-timing-function: $timing-function-action;
 
     .link:hover &,
     .link:focus & {
-      fill: var(--main-accent-color);
+      fill: $main-accent-color;
     }
   }
 
@@ -49,12 +49,12 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    color: var(--secondary-color);
+    color: $secondary-color;
     padding-top: 31px;
     padding-bottom: 32px;
     transition-property: color;
-    transition-duration: var(--duration-action);
-    transition-timing-function: var(--timing-function-action);
+    transition-duration: $duration-action;
+    transition-timing-function: $timing-function-action;
   }
 }
 
@@ -72,11 +72,11 @@
 
   &__link {
     position: relative;
-    color: var(--main-color);
+    color: $main-color;
     padding-top: 31px;
     padding-bottom: 32px;
     transition-property: color;
-    transition-duration: var(--duration-action);
-    transition-timing-function: var(--timing-function-action);
+    transition-duration: $duration-action;
+    transition-timing-function: $timing-function-action;
   }
 }

@@ -1,5 +1,5 @@
 .team {
-  background-color: var(--secondary-bg-color);
+  background-color: $secondary-bg-color;
 
   &__title {
     font-size: 36px;
@@ -19,7 +19,7 @@
   }
 
   &__item {
-    background-color: var(--white-bg-color);
+    background-color: $white-bg-color;
     flex-basis: calc((100% - 4 * 30px) / 4);
     margin-left: 30px;
     margin-top: 30px;
@@ -45,24 +45,24 @@
     align-items: center;
     border-radius: 50%;
     transition-property: background-color;
-    transition-duration: var(--duration-action);
-    transition-timing-function: var(--timing-function-action);
+    transition-duration: $duration-action;
+    transition-timing-function: $timing-function-action;
 
     &:hover,
     &:focus {
-      background-color: var(--main-accent-color);
+      background-color: $main-accent-color;
     }
   }
 
   &__social-icon {
-    fill: var(--social-icon-color);
+    fill: $social-icon-color;
     transition-property: fill;
-    transition-duration: var(--duration-action);
-    transition-timing-function: var(--timing-function-action);
+    transition-duration: $duration-action;
+    transition-timing-function: $timing-function-action;
 
     .team__social-link:hover &,
     .team__social-link:focus & {
-      fill: var(--main-font-color-dark-bg);
+      fill: $main-font-color-dark-bg;
     }
   }
 
@@ -78,7 +78,7 @@
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--secondary-color);
+    color: $secondary-color;
     margin-bottom: 16px;
   }
 }

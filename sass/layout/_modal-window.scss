@@ -7,8 +7,8 @@
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
   transition-property: opacity, visibility;
-  transition-duration: var(--duration-action);
-  transition-timing-function: var(--timing-function-action);
+  transition-duration: $duration-action;
+  transition-timing-function: $timing-function-action;
 }
 
 .modal {
@@ -39,12 +39,12 @@
     cursor: pointer;
     padding: 0;
     transition-property: fill, border-color;
-    transition-duration: var(--duration-action);
-    transition-timing-function: var(--timing-function-action);
+    transition-duration: $duration-action;
+    transition-timing-function: $timing-function-action;
 
     &:hover,
     &:focus {
-      fill: var(--main-accent-color);
+      fill: $main-accent-color;
     }
   }
 }
@@ -54,7 +54,7 @@
   flex-direction: column;
 
   &__field {
-    color: var(--secondary-color);
+    color: $secondary-color;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -69,12 +69,12 @@
 
   &__head {
     text-align: center;
-    font-family: var(--main-font);
+    font-family: $main-font;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
-    color: var(--main-color);
+    color: $main-color;
   }
 
   &__input {
@@ -85,11 +85,11 @@
     border-radius: 4px;
     padding-left: 42px;
     transition-property: border-color;
-    transition-duration: var(--duration-action);
-    transition-timing-function: var(--timing-function-action);
+    transition-duration: $duration-action;
+    transition-timing-function: $timing-function-action;
 
     &:focus {
-      border-color: var(--main-accent-color);
+      border-color: $main-accent-color;
       outline: none;
     }
 
@@ -105,11 +105,11 @@
     left: 15px;
     transform: translateY(-50%);
     transition-property: fill;
-    transition-duration: var(--duration-action);
-    transition-timing-function: var(--timing-function-action);
+    transition-duration: $duration-action;
+    transition-timing-function: $timing-function-action;
 
     .modal-form__input:focus + & {
-      fill: var(--main-accent-color);
+      fill: $main-accent-color;
     }
   }
 
@@ -126,11 +126,11 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     transition-property: border-color;
-    transition-duration: var(--duration-action);
-    transition-timing-function: var(--timing-function-action);
+    transition-duration: $duration-action;
+    transition-timing-function: $timing-function-action;
 
     &:focus {
-      border-color: var(--main-accent-color);
+      border-color: $main-accent-color;
       outline: none;
     }
 
@@ -145,7 +145,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--secondary-color);
+    color: $secondary-color;
 
     &::before {
       content: "";
@@ -154,7 +154,7 @@
       margin-right: 7px;
       width: 16px;
       height: 15px;
-      border: 1.5px solid var(--main-color);
+      border: 1.5px solid $main-color;
       border-radius: 2px;
     }
 
@@ -173,7 +173,7 @@
 
     &:hover,
     &:focus {
-      background-color: var(--auxiliary-accent-color);
+      background-color: $auxiliary-accent-color;
     }
   }
 }
@@ -183,6 +183,6 @@
   visibility: hidden;
   pointer-events: none;
   transition-property: opacity, visibility;
-  transition-duration: var(--duration-action);
-  transition-timing-function: var(--timing-function-action);
+  transition-duration: $duration-action;
+  transition-timing-function: $timing-function-action;
 }
