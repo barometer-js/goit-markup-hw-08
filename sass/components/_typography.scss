@@ -1,4 +1,4 @@
-@mixin font($fw: 400, $fs: 14px, $lh, $ls: 0.03) {
+@mixin font($fw: 400, $fs: 14px, $lh: 0, $ls: 0.03em) {
   font-weight: $fw;
   font-size: $fs;
   line-height: $lh / $fs;
@@ -8,46 +8,50 @@
 .title {
   @include font(700, 36px, 42px);
   text-align: center;
-}
 
-.title-modal {
-  @include font(700, 20px, 23px);
-  text-align: center;
+  &__modal {
+    @include font(700, 20px, 23px);
+    text-align: center;
+  }
 }
 
 .subtitle {
   @include font(700, 14px, 16px);
   text-transform: uppercase;
-}
 
-.subtitle-second {
-  @include font(500, 16px, 19px);
-  text-align: center;
-}
+  &__second {
+    @include font(500, 16px, 19px);
+    text-align: center;
+  }
 
-.subtitle-third {
-  @include font(700, 18px, 36px, 0.06);
-}
+  &__third {
+    @include font(700, 18px, 36px, 0.06em);
+  }
 
-.subtitle-modal {
-  @include font($fs: 12px, $lh: 14px, $ls: 0.01);
+  &__modal {
+    @include font($fs: 12px, $lh: 14px, $ls: 0.01em);
+  }
 }
 
 .description {
   @include font($lh: 24px);
-}
 
-.description-second {
-  @include font($fs: 16px, $lh: 19px);
-  text-align: center;
-}
+  &__second {
+    @include font($fs: 16px, $lh: 19px);
+    text-align: center;
+  }
 
-.description-third {
-  @include font($fs: 16px, $lh: 30px);
+  &__third {
+    @include font($fs: 16px, $lh: 30px);
+  }
+
+  &__overlay {
+    @include font($fs: 18px, $lh: 28px);
+  }
 }
 
 .link-nav {
-  @include font(500, $lh: 16px, $ls: 0.02);
+  @include font(500, $lh: 16px, $ls: 0.02em);
 }
 
 .placeholder {
@@ -55,14 +59,10 @@
 }
 
 .button {
-  @include font(700, 16px, 30px, 0.06);
+  @include font(700, 16px, 30px, 0.06em);
 }
 
 .radio-button {
   @include font(500, 16px, 26px);
   text-align: center;
-}
-
-.overlay-description {
-  @include font($fs: 18px, $lh: 28px);
 }
