@@ -5,6 +5,13 @@
   letter-spacing: $ls;
 }
 
+@media screen and (max-width: 1199px) {
+  .title {
+    @include font(700, 28px, 33px);
+    text-align: center;
+  }
+}
+
 .title {
   @include font(700, 36px, 42px);
   text-align: center;
@@ -51,7 +58,30 @@
 }
 
 .link-nav {
-  @include font(500, $lh: 16px, $ls: 0.02em);
+  // @include font(500, $lh: 16px, $ls: 0.02em);
+
+  // MODAL MENU WINDOW //
+  @media screen and (max-width: 767px) {
+    @include font(500, 40px, 47px, 0.02em);
+  }
+
+  &__phone {
+    @media screen and (max-width: 767px) {
+      @include font(500, 34px, 40px, 0.02em);
+    }
+  }
+
+  &__email {
+    @media screen and (max-width: 767px) {
+      @include font(500, 24px, 28px, 0.02em);
+    }
+  }
+
+  &__social-list {
+    @media screen and (max-width: 767px) {
+      @include font(500, 18px, 22px, 0.02em);
+    }
+  }
 }
 
 .placeholder {

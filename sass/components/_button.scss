@@ -10,7 +10,8 @@
   transition-timing-function: $timing-function-action;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     background-color: $auxiliary-accent-color;
     box-shadow: $shadow-color;
   }

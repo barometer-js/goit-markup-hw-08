@@ -1,27 +1,80 @@
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: turquoise;
-  overflow: auto;
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $white-bg-color;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 
-  &__container {
-    padding: 48px 40px;
-  }
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      z-index: 99;
+    }
 
-  &__close-button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    line-height: 0;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-  }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 48px 40px;
+      width: 100vw;
+      height: 100vh;
+    }
 
-  &__wrapper {
-    display: flex;
+    &__close-button {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      line-height: 0;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+
+    &__social-list {
+      display: flex;
+    }
+
+    &__nav-item {
+      margin-bottom: 32px;
+    }
+
+    &__nav-link {
+      position: relative;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: $main-color;
+    }
+
+    &__contact-item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    &__contact-phone {
+      color: $third-color;
+    }
+
+    &__contact-email {
+      color: $secondary-color;
+    }
+
+    &__social-list {
+      margin-top: 64px;
+      flex-wrap: wrap;
+    }
+
+    &__social-item:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &__social-link {
+      color: $third-color;
+    }
   }
 }

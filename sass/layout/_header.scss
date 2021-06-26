@@ -12,28 +12,33 @@
   &__logo {
     color: $logo-second-color;
   }
+}
 
-  &__contacts-list {
+@media screen and (max-width: 767px) {
+  .header {
+    &__contacts-list {
+      display: none;
+    }
+
+    &__mobile-burger-button {
+      line-height: 0;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+
+    &__mobile-burger-icon {
+      fill: #000000;
+
+      &:active {
+        fill: $main-accent-color;
+      }
+    }
+  }
+
+  .nav-menu {
     display: none;
   }
-
-  &__mobile-burger-button {
-    line-height: 0;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-  }
-
-  &__mobile-burger-icon {
-    fill: #000000;
-  }
-}
-
-.nav-menu {
-  display: none;
-}
-
-@media screen and (min-widht: 480px) {
 }
 
 //   &__container {

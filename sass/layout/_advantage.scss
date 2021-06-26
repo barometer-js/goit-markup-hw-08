@@ -1,3 +1,35 @@
+.advantage {
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    text-align: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__description {
+    text-align: start;
+    color: $secondary-color;
+    margin-bottom: 0;
+  }
+}
+
+.advatage__list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
 // .advantage {
 //   &__list {
 //     display: flex;
