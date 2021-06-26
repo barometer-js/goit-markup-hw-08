@@ -1,51 +1,51 @@
-.customers {
-  &__title {
-    margin-bottom: 50px;
-  }
+// .customers {
+//   &__title {
+//     margin-bottom: 50px;
+//   }
 
-  &__list {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-  }
+//   &__list {
+//     display: flex;
+//     align-items: center;
+//     text-align: center;
+//     flex-wrap: wrap;
+//     margin-left: -30px;
+//     margin-top: -30px;
+//   }
 
-  &__item {
-    flex-basis: calc((100% - 6 * 30px) / 6);
-    margin-left: 30px;
-    margin-top: 30px;
-  }
+//   &__item {
+//     flex-basis: calc((100% - 6 * 30px) / 6);
+//     margin-left: 30px;
+//     margin-top: 30px;
+//   }
 
-  &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    border-color: $social-icon-color;
-    transition-property: border-color;
-    transition-duration: $duration-action;
-    transition-timing-function: $timing-function-action;
+//   &__link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 170px;
+//     height: 92px;
+//     border: 1px solid #afb1b8;
+//     border-radius: 4px;
+//     border-color: $social-icon-color;
+//     transition-property: border-color;
+//     transition-duration: $duration-action;
+//     transition-timing-function: $timing-function-action;
 
-    &:hover,
-    &:focus {
-      border-color: $main-accent-color;
-    }
-  }
+//     &:hover,
+//     &:focus {
+//       border-color: $main-accent-color;
+//     }
+//   }
 
-  &__icon {
-    fill: $social-icon-color;
-    transition-property: fill;
-    transition-duration: $duration-action;
-    transition-timing-function: $timing-function-action;
+//   &__icon {
+//     fill: $social-icon-color;
+//     transition-property: fill;
+//     transition-duration: $duration-action;
+//     transition-timing-function: $timing-function-action;
 
-    .customers__link:hover &,
-    .customers__link:focus & {
-      fill: $main-accent-color;
-    }
-  }
-}
+//     .customers__link:hover &,
+//     .customers__link:focus & {
+//       fill: $main-accent-color;
+//     }
+//   }
+// }

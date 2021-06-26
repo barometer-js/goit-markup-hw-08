@@ -1,0 +1,27 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: turquoise;
+  overflow: auto;
+
+  &__container {
+    padding: 48px 40px;
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+}

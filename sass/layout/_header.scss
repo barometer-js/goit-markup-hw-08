@@ -1,5 +1,7 @@
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   &__container {
     display: flex;
@@ -7,68 +9,105 @@
     justify-content: space-between;
   }
 
-  &__nav {
-    display: flex;
-    align-items: center;
-  }
-
   &__logo {
-    margin-right: 93px;
     color: $logo-second-color;
   }
 
   &__contacts-list {
-    display: flex;
-    align-items: center;
-    color: $secondary-color;
+    display: none;
   }
 
-  &__contacts-icon {
-    fill: currentColor;
-    margin-right: 10px;
-    transition-property: fill;
-    transition-duration: $duration-action;
-    transition-timing-function: $timing-function-action;
-
-    .link:hover &,
-    .link:focus & {
-      fill: $main-accent-color;
-    }
+  &__mobile-burger-button {
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
   }
 
-  &__contacts-item:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  &__contacts-link {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    color: $secondary-color;
-    padding-top: 31px;
-    padding-bottom: 32px;
-    transition-property: color;
-    transition-duration: $duration-action;
-    transition-timing-function: $timing-function-action;
+  &__mobile-burger-icon {
+    fill: #000000;
   }
 }
 
 .nav-menu {
-  display: flex;
-  align-items: center;
-
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
-
-  &__link {
-    position: relative;
-    color: $main-color;
-    padding-top: 31px;
-    padding-bottom: 32px;
-    transition-property: color;
-    transition-duration: $duration-action;
-    transition-timing-function: $timing-function-action;
-  }
+  display: none;
 }
+
+@media screen and (min-widht: 480px) {
+}
+
+//   &__container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+
+//   &__nav {
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   &__logo {
+//     margin-right: 93px;
+//     color: $logo-second-color;
+//   }
+
+//   &__contacts-list {
+//     display: flex;
+//     align-items: center;
+//     color: $secondary-color;
+//   }
+
+//   &__contacts-icon {
+//     fill: currentColor;
+//     margin-right: 10px;
+//     transition-property: fill;
+//     transition-duration: $duration-action;
+//     transition-timing-function: $timing-function-action;
+
+//     .link:hover &,
+//     .link:focus & {
+//       fill: $main-accent-color;
+//     }
+//   }
+
+//   &__contacts-item {
+//     &:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
+
+//   &__contacts-link {
+//     display: flex;
+//     flex-direction: row-reverse;
+//     justify-content: center;
+//     align-items: center;
+//     color: $secondary-color;
+//     padding-top: 31px;
+//     padding-bottom: 32px;
+//     transition-property: color;
+//     transition-duration: $duration-action;
+//     transition-timing-function: $timing-function-action;
+//   }
+// }
+
+// .nav-menu {
+//   display: flex;
+//   align-items: center;
+
+//   &__item {
+//     &:not(:last-child) {
+//       margin-right: 50px;
+//     }
+//   }
+
+//   &__link {
+//     position: relative;
+//     color: $main-color;
+//     padding-top: 31px;
+//     padding-bottom: 32px;
+//     transition-property: color;
+//     transition-duration: $duration-action;
+//     transition-timing-function: $timing-function-action;
+//   }
+// }
