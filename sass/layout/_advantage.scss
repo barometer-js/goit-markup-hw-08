@@ -18,16 +18,49 @@
     color: $secondary-color;
     margin-bottom: 0;
   }
+
+  &__list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
 }
 
-.advatage__list-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
+@media screen and (min-width: 768px) {
+  .advantage {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: start;
+    }
+
+    &__item {
+      width: 354px;
+
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+    }
+
+    &__list-container {
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage {
+    &__item {
+      width: 270px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
 }
 
 // .advantage {

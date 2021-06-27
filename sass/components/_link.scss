@@ -1,6 +1,7 @@
 .link {
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     color: $main-accent-color;
   }
 }

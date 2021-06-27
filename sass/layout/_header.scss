@@ -1,7 +1,5 @@
 .header {
   border-bottom: 1px solid #ececec;
-  padding-top: 10px;
-  padding-bottom: 10px;
 
   &__container {
     display: flex;
@@ -14,8 +12,12 @@
   }
 }
 
+// before 768
 @media screen and (max-width: 767px) {
   .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     &__contacts-list {
       display: none;
     }
@@ -41,17 +43,125 @@
   }
 }
 
-//   &__container {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//   }
+// 768+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 
-//   &__nav {
-//     display: flex;
-//     align-items: center;
-//   }
+  .header {
+    &__mobile-burger-button {
+      display: none;
+    }
 
+    &__nav {
+      display: flex;
+      align-items: center;
+    }
+
+    &__logo {
+      margin-right: 88px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    &__contacts-icon {
+      fill: currentColor;
+      margin-right: 10px;
+      transition-property: fill;
+      transition-duration: $duration-action;
+      transition-timing-function: $timing-function-action;
+
+      .link:hover &,
+      .link:focus &,
+      .kink:active {
+        fill: $main-accent-color;
+      }
+    }
+
+    &__contacts-item {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__contacts-link {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      color: $secondary-color;
+      transition-property: color;
+      transition-duration: $duration-action;
+      transition-timing-function: $timing-function-action;
+    }
+
+    &__contacts-list {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      color: $secondary-color;
+    }
+
+    &__contacts-icon {
+      fill: currentColor;
+      margin-right: 10px;
+      transition-property: fill;
+      transition-duration: $duration-action;
+      transition-timing-function: $timing-function-action;
+
+      .link:hover &,
+      .link:focus &,
+      .link:active {
+        fill: $main-accent-color;
+      }
+    }
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+
+    &__link {
+      position: relative;
+      color: $main-color;
+      padding-top: 32px;
+      padding-bottom: 33px;
+      transition-property: color;
+      transition-duration: $duration-action;
+      transition-timing-function: $timing-function-action;
+
+      &.current {
+        color: $main-accent-color;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &__contacts-list {
+      flex-direction: initial;
+    }
+
+    &__contacts-item {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 30px;
+      }
+    }
+  }
+}
 //   &__logo {
 //     margin-right: 93px;
 //     color: $logo-second-color;

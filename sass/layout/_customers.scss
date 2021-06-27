@@ -50,10 +50,28 @@
   }
 }
 
+// 768+
+@media screen and (min-width: 768px) {
+  .customers {
+    &__item {
+      flex-basis: calc((100% - 3 * 30px) / 3);
+    }
+
+    &__link {
+      max-width: 226px;
+    }
+  }
+}
+
+// 1200+
 @media screen and (min-width: 1200px) {
   .customers {
     &__title {
       margin-bottom: 50px;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 6 * 30px) / 6);
     }
   }
 }

@@ -5,6 +5,7 @@
   letter-spacing: $ls;
 }
 
+// before 1200
 @media screen and (max-width: 1199px) {
   .title {
     @include font(700, 28px, 33px);
@@ -58,7 +59,9 @@
 }
 
 .link-nav {
-  // @include font(500, $lh: 16px, $ls: 0.02em);
+  @media screen and (min-width: 768px) {
+    @include font(500, $fs: 14px, $lh: 16px, $ls: 0.02em);
+  }
 
   // MODAL MENU WINDOW //
   @media screen and (max-width: 767px) {
@@ -81,6 +84,12 @@
     @media screen and (max-width: 767px) {
       @include font(500, 18px, 22px, 0.02em);
     }
+  }
+}
+
+.link-nav-tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include font(500, $fs: 12px, $lh: 14px, $ls: 0.02em);
   }
 }
 
