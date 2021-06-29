@@ -32,4 +32,8 @@ img {
 body {
   font-family: $main-font;
   color: $main-color;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
